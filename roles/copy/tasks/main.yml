@@ -1,0 +1,8 @@
+- name: run the copy module
+  copy:
+    src: test.txt
+    dest: /tmp/test.txt
+- name: run the clone of the copy module
+  c_copy:
+    src: test.txt
+    dest: /tmp/c_test.txt
